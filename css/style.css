@@ -157,6 +157,19 @@ input {
   font-size: 14px;
   font-family: 'Roboto Slab'; }
 
+  
+select {
+  width: 100%;
+  display: block;
+  border: 1px solid #ebebeb;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  color: #222;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: 'Roboto Slab'; }
+
 #steps-uid-0-p-0 .form-row, #steps-uid-0-p-0 .form-group, #steps-uid-0-p-0 .form-date {
   width: 680px; }
 
