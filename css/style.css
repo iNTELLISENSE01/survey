@@ -168,6 +168,22 @@ select {
   color: #222;
   font-weight: bold;
   font-size: 14px;
+
+  font-family: 'Roboto Slab'; }
+
+.lang {
+  display: block;
+  width: 1400px;
+  margin-top: 20px;
+  position: relative;
+  height: 50px;
+  border: none;
+  box-sizing: border-box;
+  padding: 0 20px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
   font-family: 'Roboto Slab'; }
 
 #steps-uid-0-p-0 .form-row, #steps-uid-0-p-0 .form-group, #steps-uid-0-p-0 .form-date {
