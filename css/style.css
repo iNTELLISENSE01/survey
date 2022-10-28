@@ -174,17 +174,27 @@ select {
 .lang {
   display: block;
   width: 1400px;
-  margin-top: 20px;
+  margin-top: 10px;
   position: relative;
   height: 50px;
   border: none;
   box-sizing: border-box;
   padding: 0 20px;
-  background-color: red;
+  background-color: #4966b1;
+  cursor: pointer;
   color: white;
   font-weight: bold;
   font-size: 14px;
-  font-family: 'Roboto Slab'; }
+  font-family: 'Roboto Slab'; 
+}
+
+@media screen and (max-width: 1024px) {
+  .lang {
+    width: 380px;
+  }
+}
+
+  
 
 #steps-uid-0-p-0 .form-row, #steps-uid-0-p-0 .form-group, #steps-uid-0-p-0 .form-date {
   width: 680px; }
@@ -527,6 +537,7 @@ input.error {
   .container {
     width: calc(100% - 40px);
     max-width: 100%; }
+    
 
   .vertical .steps, .vertical .content, .vertical .actions {
     float: none;
