@@ -117,3 +117,31 @@
         });
     }
 })(jQuery);
+
+
+// ======================== OTHER SELECTION ===================
+
+function em_other(value) {
+    if (value === 4) {
+        document.getElementById("em_status").style.display = 'block';
+    }else{
+        document.getElementById("em_status").style.display = 'none';
+    }
+}
+
+function ed_other(value) {
+    if (value === 5) {
+        document.getElementById("ed_level").style.display = 'block';
+    }else{
+        document.getElementById("ed_level").style.display = 'none';
+    }
+}
+function fd_other(value) {
+    if (value === 21) {
+        document.getElementById("fd_expertise").style.display = 'block';
+    }else{
+        document.getElementById("fd_expertise").style.display = 'none';
+    }
+}
+
+

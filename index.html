@@ -203,13 +203,16 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="email" class="form-label">Education Level</label>
-                                        <select name="" id="">
+                                        <select name="" id="" onchange="ed_other(this.selectedIndex)">
                                             <option value="" disabled selected hidden>Select</option>
-                                            <option value="">B.Sc</option>
-                                            <option value="">M.Sc</option>
-                                            <option value="">Ph.D.</option>
-                                            <option value="">Diploma</option>
+                                            <option value="B.Sc">B.Sc</option>
+                                            <option value="M.Sc">M.Sc</option>
+                                            <option value="Ph.D.">Ph.D.</option>
+                                            <option value="iplom">Diploma</option>
+                                            <option value="Other">Other</option>
                                         </select>
+
+                                        <input type="text" name="" id="ed_level">
                                     </div>
                                 </div>
                             </div>
@@ -219,13 +222,19 @@
 
                                 <div class="form-flex">
                                     <div class="form-group">
-                                        <label for="email" class="form-label">OSH Qualification</label>
-                                        <input type="text" name="qualification" id="email" />
-                                        <span class="text-input">Example :<span> B.sc Computer science</span></span>
+                                        <label for="email" class="form-label">Course of Study</label>
+                                        <select name="" id="">
+                                            <option value="" disabled selected hidden>Select</option>
+                                            <option value="B.Sc">---</option>
+                                            <option value="M.Sc">---</option>
+                                            <option value="Ph.D.">---</option>
+                                            <option value="iplom">---</option>
+                                            <option value="Other">Other</option>
+                                        </select>
                                     </div>
                                     <div class="form-group">
-                                        <label for="email" class="form-label">OSH Field of Expertise</label>
-                                        <input type="text" name="qualification" id="email" />
+                                        <label for="email" class="form-label">OSH Qualification</label>
+                                        <input type="text" name="qualification" id="" />
                                         <span class="text-input">Example :<span> B.sc Computer science</span></span>
                                     </div>
                                 </div>
@@ -249,7 +258,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="email" class="form-label">OSH Field of Expertise</label>
-                                        <select name="" id="">
+                                        <select name="" id="" onchange="fd_other(this.selectedIndex)" >
                                             <option value="" disabled selected hidden>Select</option>
                                             <option value="">Occupational Safety and Health Specialist</option>
                                             <option value="">Safety Engineers</option>
@@ -271,26 +280,27 @@
                                             <option value="">Risk Control Specialist</option>
                                             <option value="">Labour Inspector</option>
                                             <option value="">Safety Advisor</option>
+                                            <option value="">Other</option>
                                         </select>
+                                        <input type="text" name="" id="fd_expertise">
                                     </div>
                                 </div>
                             </div>
-
-
-
-
-
-
-
-
+ 
 
                             <div class="form-row">
 
                                 <div class="form-flex">
                                     <div class="form-group">
                                         <label for="email" class="form-label">Other Competency Field</label>
-                                        <input type="text" name="qualification" id="email" />
-                                        <span class="text-input">Example :<span> B.sc Computer science</span></span>
+                                        <select name="" id="">
+                                            <option value="" disabled selected hidden>Select</option>
+                                            <option value="B.Sc">---</option>
+                                            <option value="M.Sc">---</option>
+                                            <option value="Ph.D.">---</option>
+                                            <option value="iplom">---</option>
+                                            <option value="Other">Other</option>
+                                        </select>
                                     </div>
                                     <div class="form-group">
                                         <label for="email" class="form-label">Core Skills</label>
@@ -328,20 +338,6 @@
     <script src="js/main.js"></script>
 
 
-
-
-
-
-    <script>
-        function em_other(value) {
-            if (value === 4) {
-            var x = document.getElementById("em_status").style.display = 'block';
-            }else{
-                x.style.display = "none";
-            }
-        }
-
-    </script>
 </body>
 
 </html>
