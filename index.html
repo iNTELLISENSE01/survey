@@ -4,33 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="author" content="colorlib.com">
+    <meta name="author" content="colorlib.com">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form</title>
+    <title>Dech - survey</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
-    
-    
+
+
 
     <!-- Main css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
- 
-   <center>
-        
-          <select class="lang">
+
+    <center>
+
+        <select class="lang">
             <option value="lan" disabled selected hidden>Language</option>
             <option lang="en" value="english" selected>English</option>
             <option lang="po" value="portuguese">Portuguese</option>
             <option lang="fr" value="francais">Français</option>
             <option lang="ar" value="arabic">Arabic</option>
             <!-- other language options -->
-          </select>
-        
+        </select>
+
     </center>
 
 
@@ -44,7 +44,7 @@
                         <h2>About survey</h2>
                         <p class="desc">Please enter your infomation and proceed to next step</p>
                         <div class="fieldset-content">
-                            
+
                         </div>
                     </fieldset>
 
@@ -70,12 +70,12 @@
                             <div class="form-group">
                                 <label for="email" class="form-label">Email</label>
                                 <input type="email" name="email" id="email" />
-                                <span class="text-input">Example  :<span>  Jeff@gmail.com</span></span>
+                                <!-- <span class="text-input">Example  :<span>  Jeff@gmail.com</span></span> -->
                             </div>
 
 
 
-                           
+
 
                             <div class="form-row">
                                 <div class="form-flex">
@@ -139,7 +139,7 @@
                                             <option value="">São Tomé and Príncipe</option>
                                             <option value="">Seychelles</option>
                                         </select>
-                                        
+
                                     </div>
 
                                     <div class="form-group">
@@ -148,10 +148,12 @@
                                     </div>
                                 </div>
                             </div>
-                           
+
                             <div class="form-date">
-                                <label for="birth_date" class="form-label">Birth Date</label>
-                                <div class="form-date-group">
+                                <label for="birth_date" class="form-label">Birthdate</label>
+                                <input type="date" name="email" id="email" />
+
+                                <!-- <div class="form-date-group">
                                     <div class="form-date-item">
                                         <select id="birth_month" name="birth_month"></select>
                                         <span class="text-input">MM</span>
@@ -164,7 +166,7 @@
                                         <select id="birth_year" name="birth_year"></select>
                                         <span class="text-input">YYYY</span>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="form-group">
                                 <label for="ssn" class="form-label">Gender</label>
@@ -182,20 +184,22 @@
                         <h2>Survey Questions</h2>
                         <p class="desc">Please enter your infomation and proceed to submit</p>
                         <div class="fieldset-content">
-                            
-                          
+
+
 
                             <div class="form-row">
-                                 
+
                                 <div class="form-flex">
                                     <div class="form-group">
                                         <label for="email" class="form-label">Employment Status</label>
-                                        <select name="" id="">
+                                        <select name="" id="" onchange="em_other(this.selectedIndex)">
                                             <option value="" disabled selected hidden>Select</option>
-                                            <option value="">Employee</option>
-                                            <option value="">Consultant</option>
-                                            <option value="">Employer</option>
+                                            <option value="Employee">Employee</option>
+                                            <option value="Consultant">Consultant</option>
+                                            <option value="Employer">Employer</option>
+                                            <option value="Other">Other</option>
                                         </select>
+                                        <input type="text" name="" id="em_status">
                                     </div>
                                     <div class="form-group">
                                         <label for="email" class="form-label">Education Level</label>
@@ -212,51 +216,87 @@
 
 
                             <div class="form-row">
-                                 
+
                                 <div class="form-flex">
                                     <div class="form-group">
                                         <label for="email" class="form-label">OSH Qualification</label>
                                         <input type="text" name="qualification" id="email" />
-                                        <span class="text-input">Example  :<span>  B.sc Computer science</span></span>
+                                        <span class="text-input">Example :<span> B.sc Computer science</span></span>
                                     </div>
                                     <div class="form-group">
                                         <label for="email" class="form-label">OSH Field of Expertise</label>
-                                <input type="text" name="qualification" id="email" />
-                                <span class="text-input">Example  :<span>  B.sc Computer science</span></span> 
+                                        <input type="text" name="qualification" id="email" />
+                                        <span class="text-input">Example :<span> B.sc Computer science</span></span>
                                     </div>
                                 </div>
                             </div>
 
 
- 
 
-                            <div class="form-group">
-                                <label for="email" class="form-label">Years of Experience</label>
-                                <select name="" id="">
-                                    <option value="" disabled selected hidden>Select</option>
-                                    <option value="">1 - 5 years</option>
-                                    <option value="">6 - 10 years</option>
-                                    <option value="">11 - 15 years.</option>
-                                    <option value="">16 - 20 years</option>
-                                    <option value="">21 years and above</option>
-                                </select>
+                            <div class="form-row">
+
+                                <div class="form-flex">
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">Years of Experience</label>
+                                        <select name="" id="">
+                                            <option value="" disabled selected hidden>Select</option>
+                                            <option value="">1 - 5 years</option>
+                                            <option value="">6 - 10 years</option>
+                                            <option value="">11 - 15 years.</option>
+                                            <option value="">16 - 20 years</option>
+                                            <option value="">21 years and above</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">OSH Field of Expertise</label>
+                                        <select name="" id="">
+                                            <option value="" disabled selected hidden>Select</option>
+                                            <option value="">Occupational Safety and Health Specialist</option>
+                                            <option value="">Safety Engineers</option>
+                                            <option value="">Safety Consultant.</option>
+                                            <option value="">Coordinator of Loss Control</option>
+                                            <option value="">Safety Officer</option>
+                                            <option value="">Risk Manager</option>
+                                            <option value="">Loss Control Manager</option>
+                                            <option value="">Environmental Engineer</option>
+                                            <option value="">Safety Director</option>
+                                            <option value="">Vice President Safety and Healthr</option>
+                                            <option value="">Hazard Control Specialist</option>
+                                            <option value="">Environmental Safety Engineer</option>
+                                            <option value="">Injury Prevention Specialist</option>
+                                            <option value="">Corporate Safety Director</option>
+                                            <option value="">Safety Compliance Officer</option>
+                                            <option value="">Safety & Training Specialist</option>
+                                            <option value="">Product Safety Engineer</option>
+                                            <option value="">Risk Control Specialist</option>
+                                            <option value="">Labour Inspector</option>
+                                            <option value="">Safety Advisor</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
 
-                           
+
+
+
+
+
+
 
 
                             <div class="form-row">
-                                 
+
                                 <div class="form-flex">
                                     <div class="form-group">
                                         <label for="email" class="form-label">Other Competency Field</label>
                                         <input type="text" name="qualification" id="email" />
-                                        <span class="text-input">Example  :<span>  B.sc Computer science</span></span>
+                                        <span class="text-input">Example :<span> B.sc Computer science</span></span>
                                     </div>
                                     <div class="form-group">
                                         <label for="email" class="form-label">Core Skills</label>
-                                <input type="text" name="qualification" id="email" />
-                                <span class="text-input">Example  :<span>  Research,Training, Data-Management, OSH-Legislation, Investigation, Report-writing</span></span>
+                                        <input type="text" name="qualification" id="email" />
+                                        <span class="text-input">Example :<span> Research,Training, Data-Management,
+                                                OSH-Legislation, Investigation, Report-writing</span></span>
                                     </div>
                                 </div>
                             </div>
@@ -264,8 +304,8 @@
                         </div>
                     </fieldset>
 
-                    
-                    
+
+
                 </div>
             </form>
         </div>
@@ -275,7 +315,7 @@
 
 
 
-    
+
 
     <!-- JS -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -286,6 +326,22 @@
     <script src="vendor/nouislider/nouislider.min.js"></script>
     <script src="vendor/wnumb/wNumb.js"></script>
     <script src="js/main.js"></script>
+
+
+
+
+
+
+    <script>
+        function em_other(value) {
+            if (value === 4) {
+            var x = document.getElementById("em_status").style.display = 'block';
+            }else{
+                x.style.display = "none";
+            }
+        }
+
+    </script>
 </body>
 
 </html>

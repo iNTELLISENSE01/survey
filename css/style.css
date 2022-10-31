@@ -188,6 +188,10 @@ select {
   font-family: 'Roboto Slab'; 
 }
 
+#em_status{
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
   .lang {
     width: 380px;
