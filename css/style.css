@@ -103,9 +103,15 @@ body {
   font-weight: 400;
   font-family: 'Roboto Slab';
   margin: 0px;
-  background: #222;
+  background-image: url('../img/bgImage.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-color: rgb(79, 5, 108); */
   position: relative;
-  padding: 0px; }
+  padding: 0px; 
+
+}
 
 .main {
   padding: 50px 0;
