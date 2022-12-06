@@ -130,7 +130,7 @@ function em_other(value) {
 }
 
 function ed_other(value) {
-    if (value === 5) {
+    if (value === 6) {
         document.getElementById("ed_level").style.display = 'block';
     }else{
         document.getElementById("ed_level").style.display = 'none';
