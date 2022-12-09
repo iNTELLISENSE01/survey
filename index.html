@@ -231,7 +231,7 @@
                                 <div class="form-flex">
                                     <div class="form-group">
                                         <label for="email" class="form-label">Course of Study</label>
-                                        <select name="" id="">
+                                        <select name="" id="" onchange="cs_other(this.selectedIndex)">
                                             <option value="" disabled selected hidden>Select</option>
                                             <option value="Accountancy/Accounting">Accountancy/Accounting</option>
                                             <option value="Actuarial Science">Actuarial Science</option>
@@ -262,7 +262,6 @@
                                             <option value="Public Relations and Advertising">Public Relations and Advertising</option>
                                             <option value="Secretarial Administration">Secretarial Administration</option>
                                             <option value="Transport and Tourism">Transport and Tourism</option>
-
                                             <option value="Agriculture">Agriculture</option>
                                             <option value="Agricultural Administration">Agricultural Administration</option>
                                             <option value="Fisheries Management">Fisheries Management</option>
@@ -313,7 +312,6 @@
                                             <option value="Crop Production and Soil Science">Crop Production and Soil Science</option>
                                             <option value="Crop Production Technology">Crop Production Technology</option>
                                             <option value="Crop Science and Technology">Crop Science and Technology</option>
-
                                             <option value="African and Asian Studies">African and Asian Studies</option>
                                             <option value="Archaeology">Archaeology</option>
                                             <option value="Anthropology">Anthropology</option>
@@ -390,7 +388,6 @@
                                             <option value="Theology">Theology</option>
                                             <option value="Yoruba">Yoruba</option>
                                             <option value="Yoruba and Communication">Yoruba and Communication</option>
-
                                             <option value="Agricultural Engineering">Agricultural Engineering</option>
                                             <option value="Agricultural and Environmental Engineering">Agricultural and Environmental Engineering</option>
                                             <option value="Agricultural and Bio-Resources Engineering">Agricultural and Bio-Resources Engineering</option>
@@ -469,7 +466,6 @@
                                             <option value="Urban and Regional Planning">Urban and Regional Planning</option>
                                             <option value="Visual Arts technology">Visual Arts technology</option>
                                             <option value="Water Resources and Environmental Engineering">Water Resources and Environmental Engineering</option>
-
                                             <option value="Education Administration and Supervision">Education Administration and Supervision</option>
                                             <option value="Adult Education">Adult Education</option>
                                             <option value="Adult Education/English Literature">Adult Education/English Literature</option>
@@ -504,7 +500,6 @@
                                             <option value="Special Education (Visual Handicaps)">Special Education (Visual Handicaps)</option>
                                             <option value="Sport Management">Sport Management</option>
                                             <option value="Teacher Education">Teacher Education</option>
-
                                             <option value="Arts and Social Science Education">Arts and Social Science Education</option>
                                             <option value="Arts Education">Arts Education</option>
                                             <option value="Education/Arabic">Education/Arabic</option>
@@ -532,7 +527,6 @@
                                             <option value="Mass Communication">Mass Communication</option>
                                             <option value="Nigerian Languages">Nigerian Languages</option>
                                             <option value="Education and Music">Education and Music</option>
-
                                             <option value="Agricultural Education">Agricultural Education</option>
                                             <option value="Automobil Technology Education">Automobil Technology Education</option>
                                             <option value="Building Education">Building Education</option>
@@ -568,7 +562,6 @@
                                             <option value="Home Economics Education">Home Economics Education</option>
                                             <option value="Home Economics and Hotel Management">Home Economics and Hotel Management</option>
                                             <option value="Intercultural Education">Intercultural Education</option>
-
                                             <option value="Education/Political Science">Education/Political Science</option>
                                             <option value="Education/Social Science">Education/Social Science</option>
                                             <option value="Education/Social Studies">Education/Social Studies</option>
@@ -582,7 +575,6 @@
                                             <option value="Social Work and Community Development">Social Work and Community Development</option>
                                             <option value="Vocational Education">Vocational Education</option>
                                             <option value="Vocational Education and Technical Education">Vocational Education and Technical Education</option>
-
                                             <option value="Civil Law">Civil Law</option>
                                             <option value="Common and Islamic Law">Common and Islamic Law</option>
                                             <option value="International Law and Jurisprudence">International Law and Jurisprudence</option>
@@ -590,8 +582,7 @@
                                             <option value="Private and Islamic Law">Private and Islamic Law</option>
                                             <option value="Public and Internationa Law">Public and Internationa Law</option>
                                             <option value="Law">Law</option>
-                                            <option value="Common Law">Common Law</option>
-                                            
+                                            <option value="Common Law">Common Law</option>                                            
                                             <option value="Anatomy">Anatomy</option>
                                             <option value="Biochemistry">Biochemistry</option>
                                             <option value="Dentistry and Dental Technology">Dentistry and Dental Technology</option>
@@ -610,7 +601,6 @@
                                             <option value="Public Health Technology">Public Health Technology</option>
                                             <option value="Radiography">Radiography</option>
                                             <option value="Veterinary Medicine">Veterinary Medicine</option>
-
                                             <option value="Animal and Environmental Biology">Animal and Environmental Biology</option>
                                             <option value="Anthropology">Anthropology</option>
                                             <option value="Applied Botany">Applied Botany</option>
@@ -779,7 +769,6 @@
                                             <option value="Marine Biology">Marine Biology</option>
                                             <option value="Fisheries and Aquaculture">Fisheries and Aquaculture</option>
                                             <option value="Ocenography">Ocenography</option>
-
                                             <option value="Accountancy/Finance/Accounting">Accountancy/Finance/Accounting</option>
                                             <option value="Accounting Management 8 Finance">Accounting Management 8 Finance</option>
                                             <option value="Anthroplogy">Anthroplogy</option>
@@ -860,6 +849,8 @@
                                             <option value="Toursim Studies">Toursim Studies</option>
                                             <option value="Other">Other</option> 
                                         </select>
+
+                                        <input type="text" name="" id="course_study">
                                     </div>
                                     <div class="form-group">
                                         <label for="email" class="form-label">OSH Qualification</label>
@@ -928,14 +919,7 @@
                                 <div class="form-flex">
                                     <div class="form-group">
                                         <label for="email" class="form-label">Other Competency Field</label>
-                                        <select name="" id="">
-                                            <option value="" disabled selected hidden>Select</option>
-                                            <option value="B.Sc">---</option>
-                                            <option value="M.Sc">---</option>
-                                            <option value="Ph.D.">---</option>
-                                            <option value="iplom">---</option>
-                                            <option value="Other">Other</option>
-                                        </select>
+                                        <input type="text" name="qualification" id="email" />
                                     </div>
                                     <div class="form-group">
                                         <label for="email" class="form-label">Core Skills</label>

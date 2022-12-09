@@ -143,5 +143,12 @@ function fd_other(value) {
         document.getElementById("fd_expertise").style.display = 'none';
     }
 }
+function cs_other(value) {
+    if (value === 617) {
+        document.getElementById("course_study").style.display = 'block';
+    }else{
+        document.getElementById("course_study").style.display = 'none';
+    }
+}
 
 
