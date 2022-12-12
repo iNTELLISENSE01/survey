@@ -144,7 +144,7 @@ function fd_other(value) {
     }
 }
 function cs_other(value) {
-    if (value === 617) {
+    if (value === 615) {
         document.getElementById("course_study").style.display = 'block';
     }else{
         document.getElementById("course_study").style.display = 'none';
